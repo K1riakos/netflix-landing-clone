@@ -1,0 +1,219 @@
+@import '../abstract/global';
+
+.btn-primary {
+	outline: none;
+	border: none;
+	height: 100%;
+	font-size: 1rem;
+	padding: 0.65rem 1.2rem;
+	border-radius: 0.2rem;
+	background-color: map-get($colors, primary);
+	cursor: pointer;
+}
+
+.lang-dropdown {
+	display: inline-block;
+	position: relative;
+	width: 6.5rem;
+	height: 2.1rem;
+	outline: 1px solid map-get($colors, neutrals, neutral-100);
+	border-radius: 0.1rem;
+	padding: 0.55rem 1rem;
+	cursor: pointer;
+
+	&-plc {
+		position: absolute;
+		&::selection {
+			background-color: transparent;
+		}
+	}
+
+	&-opts {
+		overflow-y: hidden;
+		width: 6.5rem;
+		position: absolute;
+		outline: 1px solid map-get($colors, neutrals, neutral-100);
+		border-radius: 0.1rem;
+		padding: 0.55rem 1rem;
+		top: 120%;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: default;
+		@include toggler-height;
+	}
+
+	&-opt {
+		display: inline-block;
+		padding-block: 0.2rem;
+		cursor: pointer;
+		&::selection {
+			background-color: transparent;
+		}
+
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: map-get($colors, primary);
+		}
+	}
+}
+
+.input {
+	&-group {
+		max-width: 46rem;
+		margin-inline: auto;
+
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-block: 1.5rem;
+
+		& > button {
+			border: none;
+			outline: none;
+			border-radius: 0 0.1rem 0.1rem 0;
+			padding: 1.145rem 2rem;
+			background-color: #e50914;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			&:hover {
+				background-color: #f40612;
+				cursor: pointer;
+			}
+
+			& > span {
+				font-size: 1.9rem;
+			}
+
+			& > svg {
+				display: inline;
+				width: 0.8rem;
+			}
+		}
+	}
+
+	&-box {
+		position: relative;
+		flex: 2;
+
+		& > input {
+			width: 100%;
+			outline: none;
+			border: none;
+			padding-inline: 1rem;
+			padding-block: 2rem 1rem;
+			color: #000;
+			border-radius: 0.15rem 0 0 0.15rem;
+			caret-color: #f40612;
+		}
+
+		& > label {
+			position: absolute;
+			color: #777;
+			left: 1rem;
+			top: 50%;
+			transform: translateY(-50%);
+			letter-spacing: 0.3px;
+			transition: all 0.2s;
+		}
+
+		& > input:focus + label {
+			top: 25%;
+			font-size: 0.75rem;
+			font-weight: bold;
+		}
+	}
+}
+
+@media screen and (max-width: map-get($breakpoints, md)) {
+	.input {
+		&-group {
+			max-width: 70%;
+			gap: 1rem;
+			flex-direction: column;
+
+			& > button {
+				padding: 0.8rem 1rem;
+				border-radius: 0.1rem;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+
+				&:hover {
+					background-color: #f40612;
+					cursor: pointer;
+				}
+
+				& > span {
+					font-size: 1rem;
+				}
+
+				& > svg {
+					display: inline;
+					width: 0.4rem;
+				}
+			}
+		}
+
+		&-box {
+			width: 100%;
+
+			& > input {
+				width: 100%;
+				padding-inline: 0.8rem;
+				padding-block: 1.7rem 0.6rem;
+				border-radius: 0.08rem;
+			}
+
+			& > label {
+				left: 0.8rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: map-get($breakpoints, sm)) {
+	.input {
+		&-group {
+			max-width: 100%;
+			gap: 1.5rem;
+			flex-direction: column;
+
+			& > button {
+				gap: 0.5rem;
+			}
+		}
+
+		&-box {
+			& > input {
+				padding-block: 1.2rem 0.6rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: map-get($breakpoints, xs)) {
+	.lang-dropdown {
+		padding: 0.3rem 0.4rem;
+		height: 1.7rem;
+		width: 5.5rem;
+
+		&-opts {
+			width: 5.5rem;
+			padding: 0.45rem 0.4rem;
+		}
+	}
+	.btn-primary {
+		font-size: 0.9rem;
+		font-weight: bold;
+		height: 1.9rem;
+		padding: 0.5rem 0.5rem;
+		border-radius: 0.2rem;
+		background-color: map-get($colors, primary);
+		cursor: pointer;
+	}
+	.input-group {
+		padding-block: 1rem;
+	}
+}
