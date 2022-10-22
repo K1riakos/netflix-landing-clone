@@ -1,5 +1,9 @@
 # Netflix Landing Page Clone
 
+![demo-1](demo/demo-1.png)
+
+![demo-2](demo/demo-2.png)
+
 ![<img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white" />](https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white)
 
 📌 This is a clone website of `Netflix`'s landing page site
@@ -59,3 +63,5 @@ Go to the project directory
 ## 🙋🏻‍♂️ Author
 
 **Kyriakos Kiri Sidiropoulos**
+
+---
