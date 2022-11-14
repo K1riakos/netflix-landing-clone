@@ -6,11 +6,14 @@
 
 ![<img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white" />](https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white)
 
+
 📌 This is a clone website of `Netflix`'s landing page site
 
 ## 😎 Watch live
 
 [![<img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://dreamy-bonbon-2073bf.netlify.app)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bfc6ca21-ad09-4b87-81ad-28b076d11de2/deploy-status)](https://app.netlify.com/sites/netlifx-landing-page-clone/deploys)
 
 ## 🏠 Run Locally
 
